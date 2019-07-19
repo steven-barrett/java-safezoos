@@ -42,7 +42,7 @@ public class AnimalController
     public ResponseEntity<?> getAnimalsCount()
     {
         ArrayList<JustTheCount> myList = animalService.getCountAnimals();
-        myList.sort((q1, q2) -> q1.getAnimalType().compareToIgnoreCase(q2.getAnimalType()));
+        myList.sort((q1, q2) -> q1.getAnimalname().compareToIgnoreCase(q2.getAnimalname()));
         return new ResponseEntity<>(myList, HttpStatus.OK);
     }
 
