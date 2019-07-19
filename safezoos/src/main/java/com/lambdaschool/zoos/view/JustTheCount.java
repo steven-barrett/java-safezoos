@@ -2,5 +2,5 @@ package com.lambdaschool.zoos.view;
 
 public interface JustTheCount
 {
-    int getCount();
-}
+    String getAnimalname();
+    int getZoocount();}

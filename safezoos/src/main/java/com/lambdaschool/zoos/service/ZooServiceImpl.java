@@ -62,7 +62,7 @@ public class ZooServiceImpl implements ZooService
     @Override
     public void deleteZooAnimalCombo(long zooid, long animalid)
     {
-        if (zoorepos.checkZooAnimalCombo(zooid, animalid).getCount() > 0)
+        if (zoorepos.checkZooAnimalCombo(zooid, animalid).getZoocount() > 0)
         {
             zoorepos.deleteZooAnimalCombo(zooid, animalid);
 
